@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+//use this instead? https://github.com/flatiron/prompt
 
 if(process.argv.length == 3 && process.argv[2] == 'ios'){
   var xcode = require('xcode'),

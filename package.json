@@ -1,7 +1,8 @@
 {
   "name": "react-native-network-boot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
+  "bin":"./bin/rnnb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

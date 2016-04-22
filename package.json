@@ -1,11 +1,16 @@
 {
   "name": "react-native-network-boot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.0.3",
+    "inquirer": "^1.0.2",
+    "xcode": "git://github.com/jondot/node-xcode.git"
+  }
 }

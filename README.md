@@ -1,6 +1,6 @@
 # Network Boot
 
-If you are tired of manually setting your host IP, moving between networks, or sharing the network bootstrapping code in a team (that's in `AppDelegate.m`), this library will autoconfigure your host IP.
+If you are tired of manually setting your host IP when moving between networks, or having conflicts when sharing the network bootstrapping code in a team (that's in `AppDelegate.m`), this library will autoconfigure your the host IP for you automatically.
 
 
 To start, run:

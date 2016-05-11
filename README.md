@@ -22,7 +22,7 @@ In `AppDelegate.m`, replace the old host loading code with this:
 Run the initializer that automatically adds a Run Script phase, in your React Native project folder:
 
 ```
-$ rnnb ios
+$ ./node_modules/.bin/rnnb ios
 ```
 
 Or add a Run Script phase manually, with this script as its content:

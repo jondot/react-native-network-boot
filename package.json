@@ -1,6 +1,6 @@
 {
   "name": "react-native-network-boot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin":{ "rnnb" : "./bin/rnnb.js" },
   "main": "index.js",

@@ -14,7 +14,7 @@ case "$CONFIGURATION" in
     ;;
   *)
     echo "$0 will not work in release configurations - configure by hand"
-    exit 1
+    exit 0
     ;;
 esac
 

@@ -20,7 +20,7 @@ esac
 
 echo Setting ATS exception for arbitrary loads
 /usr/libexec/PlistBuddy -c "Delete :NSAppTransportSecurity" $plist &>/dev/null
-/usr/libexec/PlistBuddy -c "Set :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" $plist
+/usr/libexec/PlistBuddy -c "Add :NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" $plist
 
 echo Setting React Native RNHost variable to $rnhost
 /usr/libexec/PlistBuddy -c "Add :RNHost string" $plist

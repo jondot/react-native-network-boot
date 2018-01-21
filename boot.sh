@@ -1,7 +1,12 @@
 #!/bin/sh
 
-# see if ngrok is active and pointing to :8081
-ngrok_is_on=`curl -s http://127.0.0.1:4040/api/tunnels | jq '.tunnels | .[] | select(.proto == "http") | .config.addr == "localhost:8081"'`
+if [ -z `which jq` ]
+then
+    ngrok_is_on=false
+else
+    # see if ngrok is active and pointing to :8081
+    ngrok_is_on=`curl -s http://127.0.0.1:4040/api/tunnels | jq '.tunnels | .[] | select(.proto == "http") | .config.addr == "localhost:8081"'`
+fi
 
 if [ "$ngrok_is_on" == "true" ]
 then

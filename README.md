@@ -16,7 +16,8 @@ In `AppDelegate.m`, replace the old host loading code with this:
 
 ```objective-c
   NSString *host = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"RNHost"];
-  jsCodeLocation = [NSURL URLWithString: [NSString stringWithFormat:@"http://%@:8081/index.bundle?platform=ios&dev=true", host]];
+  NSString *port = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"RNPort"];
+  jsCodeLocation = [NSURL URLWithString: [NSString stringWithFormat:@"http://%@:%@/index.bundle?platform=ios&dev=true", host, port]];
 ```
 
 Run the initializer that automatically adds a Run Script phase, in your React Native project folder:
